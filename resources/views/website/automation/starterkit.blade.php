@@ -11,23 +11,22 @@
 <meta property="twitter:url" content="{{ Request::url() }}">
 <meta name="twitter:description" content="{{ $desc }}">
 <!-- 1100 X 628 -->
-<meta name="twitter:image" content="{{ asset('assets/blog/' .$id. '/horizontal.jpg') }}">
+<meta name="twitter:image" content="{{ asset('assets/blog/alz/$id/horizontal.jpg') }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:site_name" content="Psychology To Go">
 <meta property="og:description" content="{{ $desc }}">
 <!-- 1200 x 630 -->
-<meta property="og:image" content="{{ asset('assets/blog/' .$id. '/horizontal.jpg') }}">
+<meta property="og:image" content="{{ asset('assets/blog/alz/$id/horizontal.jpg') }}">
 <meta property="og:url" content="{{ Request::url() }}">
 <meta property="og:type" content="website">
-<link rel="preload" href="{{ asset('assets/blog/' .$id. '/horizontal.jpg') }}" as="image">
-<link rel="preload" href="{{ asset('assets/blog/' .$id. '/vertical.jpg') }}" as="image">
+<link rel="preload" href="{{ asset('assets/blog/alz/$id/horizontal.jpg') }}" as="image">
+<link rel="preload" href="{{ asset('assets/blog/alz/$id/vertical.jpg') }}" as="image">
 <meta property="article:published_time" content="{{ $published }}" />
 @endslot
 @slot('js')
-<script async custom-element="amp-fx-collection" src="{{ asset('amp-fx.js') }}"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
 <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-
 <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -41,10 +40,10 @@
 <amp-video autoplay loop width="1920" class="showForDesktopTablet"
     height="1080"
     layout="responsive"
-    poster="{{ asset('assets/blog/' .$id. '/horizontal.jpg') }}">
-    <source src="assets/blog/{{ $id }}/horizontal.webm"
+    poster="{{ asset('assets/blog/alz/$id/horizontal.jpg') }}">
+    <source src="assets/blog/alz/$id/horizontal.webm"
       type="video/webm" />
-    <source src="assets/blog/{{ $id }}/horizontal.mp4"
+    <source src="assets/blog/alz/$id/horizontal.mp4"
       type="video/mp4" />
     <div fallback>
       <p>This browser does not support the video element.</p>
@@ -53,10 +52,10 @@
   <amp-video autoplay loop width="1080" class="showForMobile"
     height="1920"
     layout="responsive"
-    poster="{{ asset('assets/blog/' .$id. '/vertical.jpg') }}">
-    <source src="assets/blog/{{ $id }}/vertical.webm"
+    poster="{{ asset('assets/blog/alz/$id/vertical.jpg') }}">
+    <source src="assets/blog/alz/$id/vertical.webm"
       type="video/webm" />
-    <source src="assets/blog/{{ $id }}/vertical.mp4"
+    <source src="assets/blog/alz/$id/vertical.mp4"
       type="video/mp4" />
     <div fallback>
       <p>This browser does not support the video element.</p>
@@ -125,6 +124,63 @@ layout="nodisplay">
       </div>
    </div>
 </section>
+<div amp-fx="fade-in-scroll" data-repeat="">
+  <div class="blog_table_div" style="max-width:900px">
+    <table style="width:100%" class="blog_table">
+      <caption>What do stage 5 Alzheimer’s patient forget?</caption>
+      <tr>
+        <th>8 Examples</th>
+      </tr>
+      <tr>
+        <td>1. Date of Marriage</td>
+      </tr>
+      <tr>
+        <td>2. One’s own birthday</td>
+      </tr>
+      <tr>
+        <td>3. Birthday of Others</td>
+      </tr>
+      <tr>
+        <td>4. Passwords</td>
+      </tr>
+      <tr>
+        <td>5. One’s own middle name</td>
+      </tr>
+      <tr>
+        <td>6. One’s own place of birth</td>
+      </tr>
+      <tr>
+        <td>7. How many children one has</td>
+      </tr>
+      <tr style="border-bottom: 0px">
+        <td style="border-bottom: 0px">8. Specific personal dates (e.g. engagement day)</td>
+      </tr>
+    </table>
+</div>
+</div>
+
+<!--Remember this !-->
+  <div class="selectatopic dark-bg" amp-fx="fade-in-scroll" data-repeat style="margin-bottom: 40px">
+    <div class="bigdick">
+      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="#e3e3e3" width="40px" height="40px">
+         <g>
+            <rect fill="none" height="24" width="24"/>
+         </g>
+         <g>
+            <g>
+               <path d="M13,8.57c-0.79,0-1.43,0.64-1.43,1.43s0.64,1.43,1.43,1.43s1.43-0.64,1.43-1.43S13.79,8.57,13,8.57z"/>
+               <path d="M13,3C9.25,3,6.2,5.94,6.02,9.64L4.1,12.2C3.85,12.53,4.09,13,4.5,13H6v3c0,1.1,0.9,2,2,2h1v3h7v-4.68 c2.36-1.12,4-3.53,4-6.32C20,6.13,16.87,3,13,3z M16,10c0,0.13-0.01,0.26-0.02,0.39l0.83,0.66c0.08,0.06,0.1,0.16,0.05,0.25 l-0.8,1.39c-0.05,0.09-0.16,0.12-0.24,0.09l-0.99-0.4c-0.21,0.16-0.43,0.29-0.67,0.39L14,13.83c-0.01,0.1-0.1,0.17-0.2,0.17h-1.6 c-0.1,0-0.18-0.07-0.2-0.17l-0.15-1.06c-0.25-0.1-0.47-0.23-0.68-0.39l-0.99,0.4c-0.09,0.03-0.2,0-0.25-0.09l-0.8-1.39 c-0.05-0.08-0.03-0.19,0.05-0.25l0.84-0.66C10.01,10.26,10,10.13,10,10c0-0.13,0.02-0.27,0.04-0.39L9.19,8.95 c-0.08-0.06-0.1-0.16-0.05-0.26l0.8-1.38c0.05-0.09,0.15-0.12,0.24-0.09l1,0.4c0.2-0.15,0.43-0.29,0.67-0.39l0.15-1.06 C12.02,6.07,12.1,6,12.2,6h1.6c0.1,0,0.18,0.07,0.2,0.17l0.15,1.06c0.24,0.1,0.46,0.23,0.67,0.39l1-0.4c0.09-0.03,0.2,0,0.24,0.09 l0.8,1.38c0.05,0.09,0.03,0.2-0.05,0.26l-0.85,0.66C15.99,9.73,16,9.86,16,10z"/>
+            </g>
+         </g>
+      </svg>
+    </div>
+    <div class="jump" style="color: #8193b2;">
+       Remember this
+    </div>
+      <p class="sans_serif_p" style="color: #fff;padding: 0px 13px 5px 10px; margin: 0;font-style:italic">
+      The brain of a patient diagnosed with Alzheimer's disease underwent many cellular and molecular changes. The two major clinical signs that stand in association with the disease are ...
+    </p>
+  </div>
 <!--Sections here !-->
 
 <section id="resources" style="background-color: #fff;">
@@ -159,7 +215,7 @@ layout="nodisplay">
         height="55"></amp-social-share>
       <amp-social-share class="rounded"
         type="pinterest"
-        data-param-media="{{ asset('assets/blog/'. $id . '/vertical.jpg') }}"
+        data-param-media="{{ asset('assets/blog/alz/$id/vertical.jpg') }}"
         width="55"
         height="55"></amp-social-share>
       <amp-social-share class="rounded"
@@ -213,10 +269,10 @@ layout="nodisplay">
             <amp-video autoplay loop width="360" class="bordering backgroundimage"
               height="640"
               layout="responsive"
-              poster="{{ asset('assets/blog/' .$id. '/vertical.jpg') }}"><!--Guide URL !-->
-              <source src="assets/blog/{{ $id }}/vertical.webm"
+              poster="{{ asset('assets/blog/alz/$id/vertical.jpg') }}"><!--Guide URL !-->
+              <source src="assets/blog/alz/$id/vertical.webm"
                 type="video/webm" /><!--Guide ID !-->
-              <source src="assets/blog/{{ $id }}/vertical.mp4"
+              <source src="assets/blog/alz/$id/vertical.mp4"
                 type="video/mp4" />
               <div fallback>
                 <p>This browser does not support the video element.</p>
@@ -232,11 +288,11 @@ layout="nodisplay">
           <div style="order:1" class="good_reads_box bordering">
               <a href="/how-do-you-talk-to-someone-with-alzheimers">
                 <amp-img alt="How do you talk to someone with Alzheimer's?" layout="responsive" class="bordering backgroundimage"
-                srcset="{{ asset('assets/blog/1282/vertical.webp') }}"
-                src="{{ asset('assets/blog/1282/vertical.webp') }}" height="640" width="360">
+                srcset="{{ asset('assets/blog/alz/1282/vertical.webp') }}"
+                src="{{ asset('assets/blog/alz/1282/vertical.webp') }}" height="640" width="360">
                 <amp-img fallback alt="How do you talk to someone with Alzheimer's?" layout="responsive" class="bordering backgroundimage"
-                srcset="{{ asset('assets/blog/1282/vertical.jpg') }}"
-                src="{{ asset('assets/blog/1282/vertical.jpg') }}" height="640" width="360">
+                srcset="{{ asset('assets/blog/alz/1282/vertical.jpg') }}"
+                src="{{ asset('assets/blog/alz/1282/vertical.jpg') }}" height="640" width="360">
                 </amp-img></amp-img>
             <div class="innerbox dark-bg" style="border-radius:15px">
               <p class="good_read_title uplift">How do you talk to someone with Alzheimer's?</p>
@@ -247,11 +303,11 @@ layout="nodisplay">
           <div style="order:2" class="good_reads_box bordering">
               <a href="/what-are-the-7-stages-of-alzheimers">
                 <amp-img alt="What are the 7 stages of Alzheimer's?" layout="responsive" class="bordering backgroundimage"
-                srcset="{{ asset('assets/blog/1283/vertical.webp') }}"
-                src="{{ asset('assets/blog/1283/vertical.webp') }}" height="640" width="360">
+                srcset="{{ asset('assets/blog/alz/1283/vertical.webp') }}"
+                src="{{ asset('assets/blog/alz/1283/vertical.webp') }}" height="640" width="360">
                 <amp-img fallback alt="What are the 7 stages of Alzheimer's?" layout="responsive" class="bordering backgroundimage"
-                srcset="{{ asset('assets/blog/1283/vertical.jpg') }}"
-                src="{{ asset('assets/blog/1283/vertical.jpg') }}" height="640" width="360">
+                srcset="{{ asset('assets/blog/alz/1283/vertical.jpg') }}"
+                src="{{ asset('assets/blog/alz/1283/vertical.jpg') }}" height="640" width="360">
                 </amp-img></amp-img>
             <div class="innerbox dark-bg" style="border-radius:15px">
               <p class="good_read_title uplift">What are the 7 stages of Alzheimer's?</p>
@@ -287,7 +343,7 @@ layout="nodisplay">
           height="55"></amp-social-share>
         <amp-social-share class="rounded"
           type="pinterest"
-          data-param-media="{{ asset('assets/blog/'. $id . '/vertical.jpg') }}"
+          data-param-media="{{ asset('assets/blog/alz/$id/vertical.jpg') }}"
           width="55"
           height="55"></amp-social-share>
         <amp-social-share class="rounded"

@@ -20,40 +20,11 @@
   <div style="margin-top: 2rem">
     <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlTable()">1. Table</button>
     <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlSection()">2. Sections</button>
-    <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlParagraph()">3. Paragraph</button>
-    <input type="text" id="xxxj" name="" value="" placeholder="KeyPhrase">
-    <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlKeyPhrase()">4. KeyPhrase</button>
-    <input type="text" id="xj" name="" value="" placeholder="Blog ID">
-    <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlImages()">5. Images</button>
-    <input type="text" id="xxj" name="" value="" placeholder="YouTube ID">
-    <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlYouTube()">6. YouTube</button>
   </div>
   <!--
   Put here what you got from writer.blade.php!
   -->
-  
-<img src="" alt="">
 
-  <pre>
-  <textarea id="TableElement" style="opacity:0">
-  <div amp-fx="fade-in-scroll" data-repeat>
-    <div class="blog_table_div">
-    <table style="width:100%" class="blog_table">
-      <caption>What are Plaques and Tangles?</caption>
-      <tr>
-        <th>Definitions</th>
-      </tr>
-      <tr>
-        <td><strong>Plaques</strong> are abnormal clusters of protein fragments known as beta-amyloid (BAY-tuh AM-uh-loyd). Because beta-amyloid is chemically "sticky", it can persist in the spaces between nerve cells and grow into plaques little by little.</td>
-      </tr>
-      <tr style="border-bottom: 0px">
-        <td style="border-bottom: 0px"><strong>Tangles</strong> can destroy a vital cell transport system. As a consequence tangles can be found in dead and dying nerve cells. Tangles consist of twisted strands of the “tau” protein, which normally helps the transport system to stay organized in parallel strands.</td>
-      </tr>
-    </table>
-    </div>
-  </div>
-</textarea>
-</pre>
 
   <script type="text/javascript">
 
