@@ -379,10 +379,10 @@
 </section>
 @if (Cookie::get('consent'))
 @else
-  <div class="lightbox-cookie" style="padding-top: 5%">
+  <div class="lightbox-cookie" style="padding-top: 10px">
     <div style="padding-left: 5px; padding-right: 5px">
       <div amp-fx="fade-in" class="container-cookie mx-auto light-bg-1" style="border-radius: 15px;padding-bottom: 20px;">
-        <h2 class="sans_serif_h2 center" style="padding: 10px 0 20px 0;">Please accept our<br>Privacy Terms</h2>
+        <h2 class="sans_serif_h2 center" style="padding: 5px 0 10px 0;">Please accept our<br>Privacy Terms</h2>
         <div class="container-text" style="padding:0 1rem 0 1rem">
         <p class="small_p">
           At any time, you can change your preferences by clicking on “Privacy Settings” in the footer at the bottom of the page.
@@ -411,9 +411,9 @@
             <form method="post"  action-xhr="/cookie-consent" target="_top">
               <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
               <input type="hidden" name="url" value="{{ Request::url() }}">
-              <button type="submit" name="button" class="button" style="background-color:#000;color: #fff;font-size: 1rem; margin-left: 1rem;height: 48px;border:0">Accept and Continue</button>
+              <button type="submit" name="button" class="button" style="color: #fff; background-color: #111;font-size: 1rem; margin-left: 20px;height: 48px;border:0">Accept and Continue</button>
             </form>
-            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #222; font-size: 1rem; margin-left: 1rem;border:0">Privacy Settings</a>
+            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #8193b2; font-size: 1rem; margin-left: 20px;border:0">Privacy Settings</a>
         </div>
       </div>
     </div>
