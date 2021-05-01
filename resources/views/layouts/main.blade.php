@@ -63,7 +63,7 @@
           animation: none;
         }
       </style></noscript>
-      @if (Cookie::get('consent') !== null)
+      @if (Cookie::get('consent'))
       <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
       @endif
     {{ $js }}
@@ -379,7 +379,7 @@
 </section>
 @if (Cookie::get('consent'))
 @else
-  <div class="lightbox-cookie" style="padding-top: 10%">
+  <div class="lightbox-cookie" style="padding-top: 5%">
     <div style="padding-left: 5px; padding-right: 5px">
       <div amp-fx="fade-in" class="container-cookie mx-auto light-bg-1" style="border-radius: 15px;padding-bottom: 20px;">
         <h2 class="sans_serif_h2 center" style="padding: 10px 0 20px 0;">Please accept our<br>Privacy Terms</h2>
@@ -407,13 +407,13 @@
         <p class="small_p">Your personal data use applies only while using the Psychology To Go Website. Some of our partners do not ask for your consent to process your data and rely on their legitimate business interest. Modify your settings by clicking on "Privacy Settings".</p>
         <p class="small_p">At this time, we cannot provide the full site experience if you disallow any purposes, features, or partners. Instead, we will present you with a version of our site that has 3 articles without ads, cookies, or tracking technologies.</p>
         </div>
-        <div style="border-top: 3px solid #ccc;">
+        <div style="border-top: 3px solid #ccc;" class="flex">
             <form method="post"  action-xhr="/cookie-consent" target="_top">
               <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
               <input type="hidden" name="url" value="{{ Request::url() }}">
-              <button type="submit" name="button" class="button" style="background-color:#000;color: #fff;font-size: 1rem; margin-left: 1rem;height: 48px;">Accept and Continue</button>
+              <button type="submit" name="button" class="button" style="background-color:#000;color: #fff;font-size: 1rem; margin-left: 1rem;height: 48px;border:0">Accept and Continue</button>
             </form>
-            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #222; font-size: 1rem; margin-left: 1rem;">Privacy Settings</a>
+            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #222; font-size: 1rem; margin-left: 1rem;border:0">Privacy Settings</a>
         </div>
       </div>
     </div>
