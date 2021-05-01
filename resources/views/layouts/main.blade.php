@@ -379,7 +379,7 @@
 </section>
 @if (Cookie::get('consent'))
 @else
-  <div class="lightbox-cookie" style="padding-top: 3%">
+  <div class="lightbox-cookie" style="padding-top: 5%">
     <div style="padding-left: 5px; padding-right: 5px">
       <div class="container-cookie mx-auto light-bg-1" style="border-radius: 15px;padding-bottom: 20px;">
         <h2 class="sans_serif_h2 center" style="padding: 5px 0 10px 0;">Please accept our<br>Privacy Terms</h2>
@@ -413,7 +413,7 @@
               <input type="hidden" name="url" value="{{ Request::url() }}">
               <button type="submit" name="button" class="button" style="color: #fff; background-color: #111;font-size: 1rem; margin-left: 20px;height: 48px;border:0">Accept</button>
             </form>
-            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #555555; font-size: 1rem; margin-left: 20px;border:0">Privacy Settings</a>
+            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #555555; font-size: 1rem; border:0">Privacy Settings</a>
         </div>
       </div>
     </div>
