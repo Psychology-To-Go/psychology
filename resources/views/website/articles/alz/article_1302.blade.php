@@ -20,6 +20,7 @@
 <meta property="og:url" content="{{ Request::url() }}">
 <meta property="og:type" content="website">
 <link rel="preload" href="{{ asset('assets/blog/alz/1302/horizontal.jpg') }}" as="image">
+<link rel="preload" href="{{ asset('assets/blog/alz/1302/vertical.jpg') }}" as="image">
 <meta property="article:published_time" content="2021-01-03 21:29:22" />
 @endslot
 @slot('js')
@@ -31,21 +32,60 @@
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+<script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 @endslot
 @slot('content')
-<section style="background-color: #fff" class="mx-auto container-large">
+<section style="background-color: #000;" class="container-large mx-auto">
+<amp-video autoplay loop width="1920" class="showForDesktopTablet"
+    height="1080"
+    layout="responsive"
+    poster="{{ asset('assets/blog/alz/1302/horizontal.jpg') }}">
+    <source src="assets/blog/alz/1302/horizontal.webm"
+      type="video/webm" />
+    <source src="assets/blog/alz/1302/horizontal.mp4"
+      type="video/mp4" />
+    <div fallback>
+      <p>This browser does not support the video element.</p>
+    </div>
+  </amp-video>
+  <amp-video autoplay loop width="1080" class="showForMobile"
+    height="1920"
+    layout="responsive"
+    poster="{{ asset('assets/blog/alz/1302/vertical.jpg') }}">
+    <source src="assets/blog/alz/1302/vertical.webm"
+      type="video/webm" />
+    <source src="assets/blog/alz/1302/vertical.mp4"
+      type="video/mp4" />
+    <div fallback>
+      <p>This browser does not support the video element.</p>
+    </div>
+  </amp-video>
+<amp-animation id="blogphototext"
+layout="nodisplay">
+<script type="application/json">
+{
+"duration": "0.3s",
+"fill": "both",
+"direction": "alternate",
+  "selector": "#blogphototext",
+  "animations": [{
+    "keyframes": {
+      "opacity": [1, 0.9, 1, 0.4],
+      "transform": ["translateY(0px)","translateY(3px)","translateY(10px)","translateY(600px)"]
+    }
+  }]
+}
+</script>
+</amp-animation>
+<amp-position-observer  on="scroll:blogphototext.seekTo(percent=event.percent)" layout="nodisplay"></amp-position-observer>
+<div class="text-container" id="blogphototext">
   <h1 class="huge_sans_serif_h1 center">What is stage 5 Alzheimer's?</h1>
-  <amp-img alt="The Hippocampus is responsible to navigate through a spatial environment." layout="responsive"
-  srcset="{{ asset('assets/blog/alz/1302/2_1280.webp') }},
-  {{ asset('assets/blog/alz/1302/2_2560.webp') }} 2x"
-  src="{{ asset('assets/blog/alz/1302/2_2560.webp') }}" height="1440" width="2560">
-  <amp-img fallback alt="The Hippocampus is responsible to navigate through a spatial environment." layout="responsive"
-  srcset="{{ asset('assets/blog/alz/1302/2_1280.jpg') }},
-  {{ asset('assets/blog/alz/1302/2_2560.jpg') }} 2x"
-  src="{{ asset('assets/blog/alz/1302/2_2560.jpg') }}" height="1440" width="2560">
-  </amp-img></amp-img>
+</div>
+<button class="h-topic btn2h" on="tap:share_article">
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="margin-top: 2px"><path d="M0 0h24v24H0z" fill="none"/><path fill="white" d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
+</button>
 </section>
-
 <section style="background-color: #fff; padding: 3.5rem 0 1.5rem 0;">
    <div class="container-rounded mx-auto light-bg-1">
       <div class="container-medium mx-auto">
@@ -84,6 +124,7 @@
       </div>
    </div>
 </section>
+
 
 @include('website.articles.ads.0')
 <section id="0" style="background-color: #fff;">
