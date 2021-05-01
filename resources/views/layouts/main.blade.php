@@ -381,7 +381,7 @@
 @else
   <div class="lightbox-cookie" style="padding-top: 10px">
     <div style="padding-left: 5px; padding-right: 5px">
-      <div amp-fx="fade-in" class="container-cookie mx-auto light-bg-1" style="border-radius: 15px;padding-bottom: 20px;">
+      <div class="container-cookie mx-auto light-bg-1" style="border-radius: 15px;padding-bottom: 20px;">
         <h2 class="sans_serif_h2 center" style="padding: 5px 0 10px 0;">Please accept our<br>Privacy Terms</h2>
         <div class="container-text" style="padding:0 1rem 0 1rem">
         <p class="small_p">
