@@ -379,7 +379,7 @@
 </section>
 @if (Cookie::get('consent'))
 @else
-  <div class="lightbox-cookie" style="padding-top: 10px">
+  <div class="lightbox-cookie" style="padding-top: 3%">
     <div style="padding-left: 5px; padding-right: 5px">
       <div class="container-cookie mx-auto light-bg-1" style="border-radius: 15px;padding-bottom: 20px;">
         <h2 class="sans_serif_h2 center" style="padding: 5px 0 10px 0;">Please accept our<br>Privacy Terms</h2>
