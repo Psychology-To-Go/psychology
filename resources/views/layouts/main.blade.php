@@ -411,9 +411,9 @@
             <form method="post"  action-xhr="/cookie-consent" target="_top">
               <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
               <input type="hidden" name="url" value="{{ Request::url() }}">
-              <button type="submit" name="button" class="button" style="color: #fff; background-color: #111;font-size: 1rem; margin-left: 20px;height: 48px;border:0">Accept and Continue</button>
+              <button type="submit" name="button" class="button" style="color: #fff; background-color: #111;font-size: 1rem; margin-left: 20px;height: 48px;border:0">Accept</button>
             </form>
-            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #8193b2; font-size: 1rem; margin-left: 20px;border:0">Privacy Settings</a>
+            <a href="{{ route('privacy_settings')}}" class="button" style="color: #fff; background-color: #555555; font-size: 1rem; margin-left: 20px;border:0">Privacy Settings</a>
         </div>
       </div>
     </div>
