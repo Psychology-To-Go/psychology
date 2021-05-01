@@ -14,5 +14,4 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         //
     ];
-    protected $headers = Request::HEADER_X_FORWARDED_ALL;
 }

@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-
     public function article_1281(Request $request)
     {
         return view('website.articles.alz.article_1281');
