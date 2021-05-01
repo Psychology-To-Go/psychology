@@ -81,7 +81,7 @@ layout="nodisplay">
 <amp-position-observer  on="scroll:blogphototext.seekTo(percent=event.percent)" layout="nodisplay"></amp-position-observer>
 
 <div class="text-container" id="blogphototext">
-  <h1 class="huge_sans_serif_h1 center">What does it feel like to have early onset Alzheimer?2</h1>
+  <h1 class="huge_sans_serif_h1 center">What does it feel like to have early onset Alzheimer?</h1>
 </div>
 
 

@@ -60,7 +60,7 @@
     </div>
   </amp-video>
 <div class="text-container" id="blogphototext">
-  <h1 class="huge_sans_serif_h1 center">What is stage 5 Alzheimer's?</h1>
+  <h1 class="huge_sans_serif_h1 center">What is stage 5 Alzheimer's?2</h1>
 </div>
 
 
