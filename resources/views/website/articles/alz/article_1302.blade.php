@@ -35,9 +35,8 @@
 <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 @endslot
 @slot('content')
-<h1 class="huge_sans_serif_h1 center">What is stage 5 Alzheimer's?</h1>
-
 <section style="background-color: #fff" class="mx-auto container-large">
+  <h1 class="huge_sans_serif_h1 center">What is stage 5 Alzheimer's?</h1>
   <amp-img alt="The Hippocampus is responsible to navigate through a spatial environment." layout="responsive"
   srcset="{{ asset('assets/blog/alz/1302/2_1280.webp') }},
   {{ asset('assets/blog/alz/1302/2_2560.webp') }} 2x"
