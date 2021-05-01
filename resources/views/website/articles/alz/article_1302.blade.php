@@ -40,10 +40,10 @@
 <amp-video autoplay loop width="1920" class="showForDesktopTablet"
     height="1080"
     layout="responsive"
-    poster="{{ asset('assets/blog/alz/1317/horizontal.jpg') }}">
-    <source src="assets/blog/alz/1317/horizontal.webm"
+    poster="{{ asset('assets/blog/alz/1302/horizontal.jpg') }}">
+    <source src="assets/blog/alz/1302/horizontal.webm"
       type="video/webm" />
-    <source src="assets/blog/alz/1317/horizontal.mp4"
+    <source src="assets/blog/alz/1302/horizontal.mp4"
       type="video/mp4" />
     <div fallback>
       <p>This browser does not support the video element.</p>
@@ -52,10 +52,10 @@
   <amp-video autoplay loop width="1080" class="showForMobile"
     height="1920"
     layout="responsive"
-    poster="{{ asset('assets/blog/alz/1317/vertical.jpg') }}">
-    <source src="assets/blog/alz/1317/vertical.webm"
+    poster="{{ asset('assets/blog/alz/1302/vertical.jpg') }}">
+    <source src="assets/blog/alz/1302/vertical.webm"
       type="video/webm" />
-    <source src="assets/blog/alz/1317/vertical.mp4"
+    <source src="assets/blog/alz/1302/vertical.mp4"
       type="video/mp4" />
     <div fallback>
       <p>This browser does not support the video element.</p>
