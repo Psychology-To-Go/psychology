@@ -36,7 +36,7 @@
 <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 @endslot
 @slot('content')
-<section style="background-color: #000;margin:-8% 0 -8% 0;" class="container-large mx-auto">
+<section style="background-color: #000;margin-top:-8%;" class="container-video">
 <amp-video autoplay loop width="1920" class="showForDesktopTablet"
     height="1080"
     layout="responsive"
