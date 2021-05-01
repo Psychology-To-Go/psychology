@@ -87,53 +87,6 @@
       </div>
    </div>
 </section>
-<section style="background-color: #000;margin-top:-8%;" class="container-video">
-<amp-video autoplay loop width="1920" class="showForDesktopTablet"
-    height="1080"
-    layout="responsive"
-    poster="{{ asset('assets/blog/alz/1317/horizontal.jpg') }}">
-    <source src="assets/blog/alz/1317/horizontal.webm"
-      type="video/webm" />
-    <source src="assets/blog/alz/1317/horizontal.mp4"
-      type="video/mp4" />
-    <div fallback>
-      <p>This browser does not support the video element.</p>
-    </div>
-  </amp-video>
-  <amp-video autoplay loop width="1080" class="showForMobile"
-    height="1920"
-    layout="responsive"
-    poster="{{ asset('assets/blog/alz/1317/vertical.jpg') }}">
-    <source src="assets/blog/alz/1317/vertical.webm"
-      type="video/webm" />
-    <source src="assets/blog/alz/1317/vertical.mp4"
-      type="video/mp4" />
-    <div fallback>
-      <p>This browser does not support the video element.</p>
-    </div>
-  </amp-video>
-<amp-animation id="blogphototext"
-layout="nodisplay">
-<script type="application/json">
-{
-"duration": "0.3s",
-"fill": "both",
-"direction": "alternate",
-  "selector": "#blogphototext",
-  "animations": [{
-    "keyframes": {
-      "opacity": [1, 0.9, 1, 0.4],
-      "transform": ["translateY(0px)","translateY(3px)","translateY(10px)","translateY(600px)"]
-    }
-  }]
-}
-</script>
-</amp-animation>
-<amp-position-observer  on="scroll:blogphototext.seekTo(percent=event.percent)" layout="nodisplay"></amp-position-observer>
-
-<div class="text-container" id="blogphototext">
-  <h1 class="huge_sans_serif_h1 center">What does it feel like to have early onset Alzheimer?</h1>
-</div>
 
 @include('website.articles.ads.0')
 <section id="0" style="background-color: #fff;">
