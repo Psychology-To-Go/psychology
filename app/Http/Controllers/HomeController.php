@@ -77,13 +77,7 @@ class HomeController extends Controller
 
     public function about()
     {
-        $title = "About Us | Psychology To Go";
-        $desc = "Psychology To Go is devoted exclusively to making mental health information more accessible, understandable, and actionable. Our content is created, fact-checked, and reviewed by qualified writers, psychologists, academics, psychiatrists and other contributors.";
-
-        return view('website.about.home', compact(
-            'title',
-            'desc'
-        ));
+        return view('website.about');
     }
 
     public function privacy_policy()

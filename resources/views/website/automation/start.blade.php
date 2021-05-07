@@ -21,6 +21,9 @@
     <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlTable()">1. Table</button>
     <button class="button blue" style="margin-top:10px; margin-bottom: 30px" onclick="mySectionsHtmlSection()">2. Sections</button>
   </div>
+
+
+
   <!--
   Put here what you got from writer.blade.php!
   -->
