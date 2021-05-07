@@ -15,9 +15,7 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        $title = "Psychology To Go: Health information you can trust";
-        $desc = "We're committed to being your source for practical guidance on mental health. Come to us in your pursuit of information.";
-        return view('website.start', compact('title', 'desc'));
+        return view('website.start');
     }
 
     public function tracking_free(Request $request)

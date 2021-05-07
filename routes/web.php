@@ -47,7 +47,7 @@ Route::get('/alzheimers', [ArticleController::class, 'article_1281'])->name('art
 Route::get('/how-do-you-talk-to-someone-with-alzheimers', [ArticleController::class, 'iarticle_1282ndex'])->name('article_1282');
 Route::get('/what-are-the-7-stages-of-alzheimers', [ArticleController::class, 'article_1283'])->name('article_1283');
 Route::get('/what-is-stage-5-alzheimer', [ArticleController::class, 'article_1302'])->name('article_1302');
-Route::get('/what-does-it-feel-like-to-have-early-onset-alzheimer', [ArticleController::class, 'article_1317'])->name('article_1317');
+Route::get('/what-does-it-feel-like-to-have-early-onset-alzheimers', [ArticleController::class, 'article_1317'])->name('article_1317');
 /*
 |--------------------------------------------------------------------------
 | Else  Routes
