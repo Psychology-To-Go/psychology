@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <link rel="preload" href="{{ asset('assets/blog/alz/$id/horizontal.jpg') }}" as="image">
 <link rel="preload" href="{{ asset('assets/blog/alz/$id/vertical.jpg') }}" as="image">
-<meta property="article:published_time" content="{{ $published }}" />
+<meta property="article:published_time" content="2021-02-07 21:29:22" />
 @endslot
 @slot('js')
 <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
@@ -92,10 +92,11 @@ layout="nodisplay">
 <section style="background-color: #fff; padding: 3.5rem 0 1.5rem 0;">
    <div class="container-rounded mx-auto light-bg-1">
       <div class="container-medium mx-auto">
-         <div amp-fx="fade-in-scroll" data-repeat=""><p class="sans_serif_p"><b>Someone with early-onset Alzheimer’s may start to have difficulties with memory, planning, and problem-solving. Besides, making poor financial decisions may be concerning, too. Forgetting to pay monthly bills is one of the first warning signs that might occur. Familiar day-to-day tasks require more and more concentration. A person with early-onset Alzheimer’s may show anxiety, confusion, depression, frustration, or suspicious behavior.</b></p></div>
-         <div amp-fx="fade-in-scroll" data-repeat=""><p class="sans_serif_p">Family, co-workers, and friends notice behavior changes first.</p></div>
-         <div amp-fx="fade-in-scroll" data-repeat=""><p class="sans_serif_p">Typically, phrases like “You seem different” or “You seem very frustrated lately” serve as a good indicator. </p></div>
-         <div amp-fx="fade-in-scroll" data-repeat=""><p class="sans_serif_p">Such behavior is a result of the individual’s frustration of not being able to understand the changes, which take place.</p></div>
+
+         <div amp-fx="fade-in-scroll" data-repeat=""><p class="sans_serif_p"><b>{{ $desc }}</b></p></div>
+
+
+
          <div amp-fx="fade-in-scroll" data-repeat="">
             <div class="selectatopic dark-bg" style="max-width: 470px;">
                <div class="bigdick">
@@ -194,7 +195,7 @@ layout="nodisplay">
       <div class="sourcebox1">
         <p class="sans_serif_p" style="padding-top: 0px;margin-top: 20px;">
         <a class="link" on="tap:sources_list.toggleVisibility" role="button" tabindex="0">
-         +13 Sources <!--Change here !-->
+         +2 Sources <!--Change here !-->
         </a>
         </p>
       </div>
@@ -215,7 +216,7 @@ layout="nodisplay">
         height="55"></amp-social-share>
       <amp-social-share class="rounded"
         type="pinterest"
-        data-param-media="{{ asset('assets/blog/alz/$id/vertical.jpg') }}"
+        data-param-media="{{ asset('assets/blog/alz/1310/vertical.jpg') }}"
         width="55"
         height="55"></amp-social-share>
       <amp-social-share class="rounded"
@@ -240,10 +241,10 @@ layout="nodisplay">
       <div id="sources_list" hidden>
         <ul><!--Change here !-->
           <li>
-            <p class="sans_serif_p">Perl, D. P. (2010). Neuropathology of Alzheimer’s Disease. Mount Sinai Journal of Medicine: A Journal of Translational and Personalized Medicine, 77(1), 32–42. <a href="https://doi.org/10.1002/msj.20157 " target="_blank" rel="noreferrer" class="link">https://doi.org/10.1002/msj.20157</a></p>
+            <p class="sans_serif_p">Pförtner, P. (n.d.). All you need to know about Alzheimer's Guide. Psychology-to-Go.Com. Retrieved Mai 26, 2021, from <a href="https://psychology-to-go.com/alzheimers" target="_blank" rel="noreferrer" class="link">https://psychology-to-go.com/alzheimers</a></p>
           </li>
           <li>
-            <p class="sans_serif_p">What is Alzheimer’s Disease? | CDC. (n.d.). CDC. Retrieved July 8, 2020, from <a href="https://www.cdc.gov/aging/aginginfo/alzheimers.htm " target="_blank" rel="noreferrer" class="link">cdc.gov/aging/aginginfo/alzheimers</a></p>
+            <p class="sans_serif_p">Pförtner, P. (n.d.). Why do Alzheimer's patients want to go home. Psychology-to-Go.Com. Retrieved Mai 26, 2021, from <a href="https://psychology-to-go.com/why-do-alzheimers-patients-want-to-go-home" target="_blank" rel="noreferrer" class="link">https://psychology-to-go.com/why-do-alzheimers-patients-want-to-go-home</a></p>
           </li>
         </ul>
       </div>
@@ -254,6 +255,7 @@ layout="nodisplay">
     </div>
   </div>
 </section>
+
 
 <section style="background-color: #fff;">
    <div class="container-rounded mx-auto" style="padding-top: 0rem;padding-bottom: 0rem">
